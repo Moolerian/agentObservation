@@ -1,0 +1,26 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+
+        <property name = "hibernate.dialect">
+            org.hibernate.dialect.SQLiteDialect
+        </property>
+
+        <property name = "hibernate.connection.driver_class">
+            org.sqlite.JDBC
+        </property>
+
+        <!-- Assume test is the database name -->
+
+        <property name = "hibernate.connection.url">
+            jdbc:sqlite:src\main\resources\all_sky_db.db
+        </property>
+        <mapping class="model.User"/>
+        <mapping class="model.Agent"/>
+        <mapping class="model.AgentInfo"/>
+        <mapping class="model.Location"/>
+        <mapping class="model.WorkHistory"/>
+    </session-factory>
+</hibernate-configuration>
