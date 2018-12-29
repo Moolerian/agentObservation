@@ -18,8 +18,8 @@ public class WorkHistory {
     @Column(name = "registerDate")
     private Date registerDate;
 
-    @Column(name = "info")
-    private String info;
+    @Column(name = "fileName")
+    private String fileName;
 
     public Integer getId() {
         return id;
@@ -45,11 +45,11 @@ public class WorkHistory {
         this.registerDate = registerDate;
     }
 
-    public String getInfo() {
-        return info;
+    public String getFileName() {
+        return fileName;
     }
 
-    public void setInfo(String info) {
-        this.info = info;
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
     }
 }

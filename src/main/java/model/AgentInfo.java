@@ -12,11 +12,8 @@ public class AgentInfo {
     @Column(name = "id")
     private Integer id;
 
-    @Column(name = "agentId")
-    private Integer agentId;
-
-    @Column(name = "locationId")
-    private Integer locationId;
+    @Column(name = "userId")
+    private Integer userId;
 
     @Column(name = "startDate")
     private Date startDate;
@@ -27,28 +24,24 @@ public class AgentInfo {
     @Column(name = "registerDate")
     private Date registerDate;
 
+    @Column(name = "lat")
+    private double lat;
+
+    @Column(name = "lon")
+    private double lon;
+
+    @Column(name = "telesType")
+    private String telesType;
+
+    @Column(name = "isActive")
+    private boolean isActive;
+
     public Integer getId() {
         return id;
     }
 
     public void setId(Integer id) {
         this.id = id;
-    }
-
-    public Integer getAgentId() {
-        return agentId;
-    }
-
-    public void setAgentId(Integer agentId) {
-        this.agentId = agentId;
-    }
-
-    public Integer getLocationId() {
-        return locationId;
-    }
-
-    public void setLocationId(Integer locationId) {
-        this.locationId = locationId;
     }
 
     public Date getStartDate() {
@@ -73,5 +66,37 @@ public class AgentInfo {
 
     public void setRegisterDate(Date registerDate) {
         this.registerDate = registerDate;
+    }
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
+    }
+
+    public double getLat() {
+        return lat;
+    }
+
+    public void setLat(double lat) {
+        this.lat = lat;
+    }
+
+    public double getLon() {
+        return lon;
+    }
+
+    public void setLon(double lon) {
+        this.lon = lon;
+    }
+
+    public String getTelesType() {
+        return telesType;
+    }
+
+    public void setTelesType(String telesType) {
+        this.telesType = telesType;
     }
 }

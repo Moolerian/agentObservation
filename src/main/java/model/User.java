@@ -21,6 +21,15 @@ public class User {
     @Column(name = "registerDate")
     private Date registerDate;
 
+    @Column(name = "name")
+    private String name;
+
+    @Column(name = "lastName")
+    private String lastName;
+
+    @Column(name = "gender")
+    private boolean gender;
+
 
     public Integer getId() {
         return id;
@@ -53,6 +62,8 @@ public class User {
     public void setRegisterDate(Date registerDate) {
         this.registerDate = registerDate;
     }
+
+
 
 
 }

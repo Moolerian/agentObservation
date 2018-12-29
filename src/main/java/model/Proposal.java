@@ -3,8 +3,8 @@ package model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "agentInfo")
-public class Location {
+@Table(name = "proposal")
+public class Proposal {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
