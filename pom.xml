@@ -12,6 +12,14 @@
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
+    <repositories>
+        <repository>
+            <id>netbeans</id>
+            <name>Netbeans rep</name>
+            <url>http://bits.netbeans.org/maven2/</url>
+        </repository>
+    </repositories>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.7</maven.compiler.source>
@@ -39,6 +47,16 @@
             <artifactId>icu4j</artifactId>
             <version>4.6</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.netbeans.external/AbsoluteLayout -->
+        <dependency>
+            <groupId>org.netbeans.external</groupId>
+            <artifactId>AbsoluteLayout</artifactId>
+            <version>RELEASE74</version>
+        </dependency>
+
+
+
 
         <!-- https://mvnrepository.com/artifact/ir.ghasemkiani/persiancalendar -->
         <dependency>

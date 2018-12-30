@@ -18,9 +18,9 @@
             jdbc:sqlite:src\main\resources\all_sky_db.db
         </property>
         <mapping class="model.User"/>
-        <mapping class="model.Agent"/>
+        <mapping class="model.Proposal"/>
         <mapping class="model.AgentInfo"/>
-        <mapping class="model.Location"/>
+        <mapping class="model.Proposal2User"/>
         <mapping class="model.WorkHistory"/>
     </session-factory>
 </hibernate-configuration>
